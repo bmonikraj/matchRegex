@@ -1,8 +1,11 @@
 from django.http import HttpResponse, HttpRequest, JsonResponse
 from django.template import Context, loader, Template
+
 import json
 import re
 
+from django.views.decorators.csrf import ensure_csrf_cookie  #Important MUST for production server for CSRF security
+@ensure_csrf_cookie    #Important MUST for production server for CSRF security
 
 #request = HttpRequest
 def index(request):
