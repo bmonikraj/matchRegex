@@ -1,0 +1,61 @@
+{% load static %}
+
+body,td,th {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+}
+body {
+
+	background-repeat: repeat;
+	color: rgba(13,239,13,1.00);
+}
+
+#headingMain {
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size: xx-large;
+	font-style: italic;
+	font-weight: 900;
+	text-transform: capitalize;
+	color: rgba(220,9,13,1);
+	text-decoration: blink;
+	background-color: rgba(189,241,223,1);
+	background-position: center center;
+	letter-spacing: normal;
+	word-spacing: normal;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	float: none;
+	height: auto;
+	width: auto;
+	border: thick groove rgba(253,11,15,1.00);
+	border-radius: 400px;
+	text-align: center;
+	position: relative;
+}
+
+#mainArea {
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 79px;
+	padding-right: 44px;
+	color: rgba(0,0,0,1.00);
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-weight: 700;
+	font-size: large;
+	text-shadow: 0px 0px rgba(212,70,72,1.00);
+	letter-spacing: 0em;
+	word-spacing: 1em;
+	border-radius: 60px;
+	border: 10px inset rgba(97,187,237,1.00);
+	background-image: -webkit-linear-gradient(270deg,rgba(7,138,136,0.47) 0%,rgba(7,132,111,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(7,138,136,0.47) 0%,rgba(7,132,111,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(7,138,136,0.47) 0%,rgba(7,132,111,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(7,138,136,0.47) 0%,rgba(7,132,111,1.00) 100%);
+}
+
+#developerDetails {
+    font-size: 25px;
+}
