@@ -44,8 +44,10 @@ function ajaxCall() {
 function displayResult(jsonResult) {
     var responseGot = JSON.parse(jsonResult);
     var htmlResult = 'Total Matches Found : ' + responseGot.totalOcc.toString() + '\n';
-    for (var i=0;i<responseGot.occArr.length;i++){
+    if(responseGot.totalOcc > 0){
+    	for (var i=0;i<responseGot.occArr.length;i++){
         htmlResult = htmlResult + 'Occurence Number ' +(i+1).toString()+ ' : '+ responseGot.occArr[i].text.toString() + '\n';
+    }
     }
     document.getElementById("matchTextArea").innerHTML = htmlResult;
 }
