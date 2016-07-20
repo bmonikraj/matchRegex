@@ -33,3 +33,9 @@ def regexService(request):
                 responseJSON = responseJSON+']}'
             return HttpResponse(responseJSON)
     return HttpResponse("Service Hit but nothing...")
+    
+def session(request):
+    print "Session View"
+    request.session['user'] = "Monik"
+    print request.session['user']
+    return HttpResponse(request.session['user'])
